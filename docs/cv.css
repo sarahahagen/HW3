@@ -2,7 +2,7 @@
     Name: Sarah Hagen
     Class Name: CPSC 332
     Assignment Name: Homework 3 - CSS
-    Last Modified: 10/06/2022
+    Last Modified: 10/07/2022
 */
 
 .intro {
@@ -42,11 +42,16 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.logo {
+    display: grid;
+    grid-area: logo;
+}
+
 body {
     display: grid;
     background-color:rgb(237, 222, 196);
     grid-template-areas:
-        "nav nav nav"
+        "logo nav nav"
         "profile core core"
         "profile career career"
         "profil edu edu"
@@ -63,6 +68,12 @@ h1 {
 
 #name {
     margin-right: 20px;
+}
+
+#logo-id {
+    width: 75px;
+    height: 150px;
+    border-radius: 7px;
 }
 
 #profile-pic {
